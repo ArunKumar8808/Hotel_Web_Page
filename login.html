@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <style>
+        h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: inria serif, bold;
+        font-size: 55px;
+    }
+    
+    p,
+    b,
+    span,
+    tr,
+    td,i {
+        font-family: Comic Sans MS;
+    }
+    .btn{
+        border-color: green;
+        background-color: transparent;
+         height: 30px;
+            border-radius: 5px;
+            border-width: 1.5px;
+            color: #000000;
+    }
+    button:hover{
+         color: #ffffff;
+         background-color: green;
+    }
+    
+    
+    </style>    
+</head>
+
+<body>
+
+
+
+
+    <div id="loginForm">
+        <fieldset>
+        <legend>
+            <h2>Login</h2>
+        </legend>
+        <form onsubmit="return login()">
+            <b>Enter Email Id:</b>
+            <input type="email" placeholder="Email" required><br><br>
+            <b>Enter Password:</b>
+            <input type="password" placeholder="Password" required>
+            <button class="btn" type="submit">Login</button><br><br>
+            <input type="checkbox" id="loginCheckBox" checked> <b>I accept term's and conditions</b><br><br>
+        </form>
+
+        <span>Don't have an account? <a href="#" onclick="toggleForm('signupForm')">SignUp</a></span>
+</fieldset>
+    </div>
+
+    <div id="signupForm" style="display: none;">
+<fieldset>
+    <legend>
+        <h2>SignUp</h2></legend>
+
+        <form onsubmit="return signup()">
+            <b>Enter Email Id:</b>
+            <input type="email" placeholder="Email" required><br><br>
+            <b>Enter Password:</b>
+            <input type="password" placeholder="Password" required>
+            <button class="btn" type="submit">Signup</button><br><br>
+            <input type="checkbox" id="loginCheckBox" checked> <b>I accept term's and conditions</b><br><br>
+        </form>
+
+        <span>Already have an account? <a href="#" onclick="toggleForm('loginForm')">Login</a></span>
+</fieldset>
+    </div>
+
+    <p id="output"></p>
+    
+
+
+    <script>
+        function toggleForm(formId) {
+            let loginForm = document.getElementById('loginForm');
+            let signupForm = document.getElementById('signupForm');
+            if (formId === 'loginForm') {
+                loginForm.style.display = 'block';
+                signupForm.style.display = 'none';
+            } else if (formId === 'signupForm') {
+                loginForm.style.display = 'none';
+                signupForm.style.display = 'block';
+            }
+            document.getElementById('output').innerHTML = '';
+        }
+
+        function login() {
+            let email = document.getElementById('loginForm').querySelector('input[type="email"]').value;
+            let password = document.getElementById('loginForm').querySelector('input[type="password"]').value;
+
+            if (email && password) {
+                alert("Login Successful!");
+                window.location.href = "demo.html";
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function signup() {
+            let email = document.getElementById('signupForm').querySelector('input[type="email"]').value;
+            let password = document.getElementById('signupForm').querySelector('input[type="password"]').value;
+            alert("Signup Successful!");
+            if (email && password) {
+                window.location.href = "demo.html"
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

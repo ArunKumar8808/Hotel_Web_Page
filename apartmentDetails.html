@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <script src="https://kit.fontawesome.com/8345247dd3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="demo.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+    h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inria serif, bold;
+    font-size: 55px;
+}
+
+p,
+b,
+span,
+tr,
+td,i {
+    font-family: Comic Sans MS;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <div id="apartmentDetails">
+    <center  class=" p-4">
+      <h1 class="text-center">Urban Skyline Apartment</h1>
+      <div class="w-50">
+       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://urbanspacecreators.com/wp-content/uploads/2021/10/urban_skyline_3-960x940.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/09/15/Project-Photo-29-Urban-Skyline-Phase-2-Pune-5318219_533_800_310_462.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://as1.ftcdn.net/v2/jpg/05/58/69/28/1000_F_558692871_vUAFxp0gUcvKKeGxbh24oCW7eiUf2CKK.jpg" class="d-block w-100" alt="...">
+            </div>
+             <div class="carousel-item">
+              <img src="https://img.freepik.com/premium-photo/luxury-apartment-with-panoramic-city-skyline-view-generated-by-ai_188544-54405.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.nynesting.com/sites/default/files/teaser_images/24_hour_concierge.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <details>
+          <ul>
+            <h4>Urban Skyline Apartment</h4>
+            <p>Live amidst the vibrant city life in our modern and stylish urban apartment.</p>
+            <i>Apartment size: 100 m²</i><br><br>
+            <i>Panoramic City Views</i><br><br>
+            <i>Price: $300/night</i><br><br>
+            <i>24/7 Concierge Service</i> <br><br>
+          </ul>
+          <button class="btn btn-outline-success my-2 my-sm-0" onclick="goBack()">Back</button>
+        </details>
+      </div>
+    </center>
+  </div>
+  
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inria serif, bold;
+    font-size: 55px;
+}
+
+p,
+b,
+span,
+tr,
+td {
+    font-family: Comic Sans MS;
+}
+
+
+
+
+
+
+.logoNavBar {
+    height: 35px;
+}
+
+.banner {
+    background-color: #9ccaff;
+    background-size: cover;
+}
+
+.stay {
+    color: #000000;
+    padding-left: 10px;
+}
+
+
+
+.banner-image {
+    background-size: cover;
+    height: 80%;
+
+}
+
+.button {
+    background-color: green;
+    color: #ffffff;
+}
+
+.WhyChooseUspage {
+    padding: 25px;
+    font-family: "Roboto";
+
+}
+
+.WhyChooseUsPara {
+    text-align: center;
+}
+
+.WhyChooseUsPara2 {
+    text-align: center;
+}
+
+.WhyChooseUsPara3 {
+    text-align: center;
+}
+
+.explore {
+    max-height: 400px;
+    width: auto;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.SelectHotels {
+    padding: 25px;
+
+
+
+}
+
+.hotelsimage {
+    border-radius: 10px;
+}
+
+.hotelsheading {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.hotel-container {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bookingPage {
+    padding: 25px;
+
+}
+
+.Contact-Details {
+    padding: 25px;
+
+}
+
+.booking-details {
+
+    padding: 25px;
+}
+
+.footer {
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footerLogo {
+    height: 17px;
+    width: 110px;
+}
+
